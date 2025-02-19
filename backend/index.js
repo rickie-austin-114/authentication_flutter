@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 // MongoDB connection
 mongoose
-  .connect("mongodb+srv://yau7:ji5paBVj8OrbUEU9@cluster0.v11ow.mongodb.net/flutterAppDB", { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect("mongodb://localhost:27017/flutterAppDB", { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log(err));
 
